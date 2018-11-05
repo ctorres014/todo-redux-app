@@ -16,4 +16,4 @@ export interface AppState {
 export const appReducers: ActionReducerMap<AppState> = {
     todos: fromTodo.todoReducer,
     filtro: fromFilter.filtroReducer
-}
+};

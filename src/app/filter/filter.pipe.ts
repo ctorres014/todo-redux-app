@@ -19,7 +19,6 @@ export class FilterPipe implements PipeTransform {
       default:
         return todo;
     }
-    return todo;
   }
 
 }

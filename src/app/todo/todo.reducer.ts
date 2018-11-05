@@ -53,6 +53,8 @@ export function todoReducer(state = estadoInicial,
                 return state.map(todoEdit => {
                     return { ...todoEdit, completado: action.completado };
                 });
+            case fromTodo.BORRAR_ALL_TODO:
+                return state.filter( todoEdit => !todoEdit.completado);
             default:
                 return state;
         }
